@@ -1,11 +1,14 @@
+logging:
+  level:
+    .: error
+    org.springframework: ERROR
+    com.mkyong: ERROR
+
 spring:
-  profiles: prod
+  profiles:
+    active: "dev"
+  main:
+    banner-mode: "off"
+
 server:
-  email: prod@mkyong.com
-  cluster:
-    - ip: 192.168.0.1
-      path: /app1
-    - ip: 192.168.0.2
-      path: /app2
-    - ip: 192.168.0.3
-      path: /app3
+  email: default@mkyong.com
