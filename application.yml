@@ -1,18 +1,4 @@
 spring:
-  profiles: dev
-server:
-  email: dev@mkyong.com
-  cluster:
-    - ip: 127.0.0.1
-      path: /dev1
-    - ip: 127.0.0.2
-      path: /dev2
-    - ip: 127.0.0.3
-      path: /dev3
-
----
-
-spring:
   profiles: prod
 server:
   email: prod@mkyong.com
