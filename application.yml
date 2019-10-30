@@ -1,9 +1,3 @@
-logging:
-  level:
-    .: error
-    org.springframework: ERROR
-    com.mkyong: ERROR
-
 spring:
   profiles:
     active: "dev"
